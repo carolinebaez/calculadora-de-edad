@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de edad</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container_padre">
+        <div class="container">
+            <div> DAY <input class="input-field DD" type="number" min="1" max="31" placeholder="DD"></div>
+            <div>MONTH <input class="input-field MM" type="number" min="1" max="12" placeholder="MM"></div>
+            <div>YEAR <input class="input-field YYYY" type="number" min="1900" max="2099" placeholder="YYYY"></div>
+        </div>
+        <button class="calcular-btn">↓</button>
+        <div class=" container_inferior">
+            <div><span class="years">--</span> YEARS</div>
+            <div><span class="months">--</span> MONTHS</div>
+            <div><span class="days">--</span> DAYS</div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

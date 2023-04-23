@@ -1,0 +1,91 @@
+
+body {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   cursor: url(./mano.svg), auto !important;
+   
+}
+
+
+ .container_padre {
+   background-color: white;
+   border-radius: 24px 24px 200px 24px;
+   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+ }
+ 
+ .container {
+   font-family: 'monospace';
+   color: gray;
+   font-size: 14px;
+   display: flex;
+   padding-left: 48px;
+   gap: 20px;
+ }
+ 
+ .DD, .MM, .YYYY {
+   font-size: 25px;
+   display: flex;
+   border: solid 1px;
+   border-radius: 5px;
+   font-family: 'monospace';
+   padding-left: 25px;
+ }
+ 
+ .YYYY {
+   margin-right: 272px;
+ }
+ 
+ .calcular-btn {
+   background-color: blueviolet;
+   border-radius: 60px;
+   text-align: center;
+   font-size: 50px;
+   color: white;
+   height: 76px;
+   width: 77px;
+   margin-left: 3px;
+   margin-right: 59px;
+   float: right;
+   cursor: url(./mano.svg), auto !important;
+ }
+
+ .calcular-btn.clicked {
+   background-color: black;
+   color: white;
+
+ }
+
+
+
+   
+
+ .calcular-btn:hover {
+   cursor: pointer;
+ }
+ 
+ 
+
+
+ 
+ 
+ 
+ .container_inferior {
+   color: black;
+   margin-bottom: 20px;
+   font-weight: 800;
+   font-size: 104px;
+   margin-top: 128px;
+   margin-left: 46px;
+ }
+ 
+ .years, .months, .days {
+   color: blueviolet;
+ }
+ 
+
+
+
+
+
