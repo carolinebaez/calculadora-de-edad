@@ -1,42 +1,57 @@
 const calcularBtn = document.querySelector('.calcular-btn');
-const day = document.querySelector('.DD');
-const month = document.querySelector('.MM');
-const year = document.querySelector('.YYYY');
-const yearsOutput = document.querySelector('.years');
-const monthsOutput = document.querySelector('.months');
-const daysOutput = document.querySelector('.days');
+const inputDD = document.querySelector('.DD');
+const inputMM = document.querySelector('.MM');
+const inputYYYY = document.querySelector('.YYYY');
+const years = document.querySelector('.years');
+const months = document.querySelector('.months');
+const days = document.querySelector('.days');
+const errorMessage = document.querySelectorAll('.error-message');
 
-calcularBtn.addEventListener('click', function() {
-  const birthday = new Date(`${year.value}-${month.value}-${day.value}`);
+calcularBtn.addEventListener('click', () => {
+  const birthDate = new Date(inputYYYY.value, inputMM.value - 1, inputDD.value);
   const today = new Date();
-  let ageYears = today.getFullYear() - birthday.getFullYear();
-  let ageMonths = today.getMonth() - birthday.getMonth();
-  let ageDays = today.getDate() - birthday.getDate();
   
-  const calcularBtn = document.querySelector('.calcular-btn');
-
-calcularBtn.addEventListener('click', function() {
-  // tu código actual aquí
-  calcularBtn.classList.add('clicked');
-});
-
-  // Check if the birthday hasn't occurred yet this year
-  if (today.getMonth() < birthday.getMonth() ||
-    (today.getMonth() == birthday.getMonth() && today.getDate() < birthday.getDate())) {
-    ageYears--;
-    ageMonths = 12 - (birthday.getMonth() - today.getMonth());
-    if (today.getDate() < birthday.getDate()) {
-      ageMonths--;
-      ageDays = new Date(today.getFullYear(), today.getMonth(), 0).getDate() - birthday.getDate() + today.getDate();
-    }
+  // Validación de los campos de fecha
+  if (inputDD.value < 1 || inputDD.value > 31 || isNaN(inputDD.value)) {
+    errorMessage[0].style.display = 'block';
+    return;
   } else {
-    if (today.getDate() < birthday.getDate()) {
-      ageMonths--;
-      ageDays = new Date(today.getFullYear(), today.getMonth(), 0).getDate() - birthday.getDate() + today.getDate();
-    }
+    errorMessage[0].style.display = 'none';
   }
-  
-  yearsOutput.textContent = ageYears ;
-  monthsOutput.textContent = ageMonths ;
-  daysOutput.textContent = ageDays;
+
+  if (inputMM.value < 1 || inputMM.value > 12 || isNaN(inputMM.value)) {
+    errorMessage[1].style.display = 'block';
+    return;
+  } else {
+    errorMessage[1].style.display = 'none';
+  }
+
+  if (inputYYYY.value < 1900 || inputYYYY.value > 2099 || isNaN(inputYYYY.value)) {
+    errorMessage[2].style.display = 'block';
+    return;
+  } else {
+    errorMessage[2].style.display = 'none';
+  }
+
+  let ageYears = today.getFullYear() - birthDate.getFullYear();
+  let ageMonths = today.getMonth() - birthDate.getMonth();
+  let ageDays = today.getDate() - birthDate.getDate();
+
+  if (ageDays < 0) {
+    ageMonths -= 1;
+    ageDays += daysInMonth(birthDate.getMonth(), birthDate.getFullYear());
+  }
+
+  if (ageMonths < 0) {
+    ageYears -= 1;
+    ageMonths += 12;
+  }
+
+  years.textContent = ageYears;
+  months.textContent = ageMonths;
+  days.textContent = ageDays;
 });
+
+function daysInMonth(month, year) {
+  return new Date(year, month + 1, 0).getDate();
+}
