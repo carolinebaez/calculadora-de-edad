@@ -8,20 +8,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
     <div class="container_padre">
         <div class="container">
-            <div> DAY <input class="input-field DD" type="number" min="1" max="31" placeholder="DD"></div>
-            <div>MONTH <input class="input-field MM" type="number" min="1" max="12" placeholder="MM"></div>
-            <div>YEAR <input class="input-field YYYY" type="number" min="1900" max="2099" placeholder="YYYY"></div>
+            <div> DAY <input class="input-field DD" type="number" min="1" max="31" placeholder="DD">
+              <samp class="error-message" style="display:none; color:red;">This field is required</samp> 
+            </div>
+            
+            <div>MONTH <input class="input-field MM" type="number" min="1" max="12" placeholder="MM">
+            <samp class="error-message" style="display:none; color:red;">This field is required</samp>
+            </div>
+            <div>YEAR <input class="input-field YYYY" type="number" min="1900" max="2099" placeholder="YYYY">
+             <samp class="error-message" style="display:none; color:red;">This field is required</samp> 
+            </div>
+          
         </div>
         <button class="calcular-btn">↓</button>
         <div class=" container_inferior">
             <div><span class="years">--</span> YEARS</div>
             <div><span class="months">--</span> MONTHS</div>
             <div><span class="days">--</span> DAYS</div>
+            <div><samp class="error-message" style="display:none; color:red;">This field is required</samp></div>
         </div>
     </div>
+    
     <script src="app.js"></script>
 </body>
 </html>
