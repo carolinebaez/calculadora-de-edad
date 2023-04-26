@@ -4,10 +4,8 @@ body {
    justify-content: center;
    align-items: center;
    height: 100vh;
-   cursor: url(./mano.svg), auto !important;
-   
-}
 
+}
 
  .container_padre {
    background-color: white;
@@ -48,9 +46,16 @@ body {
    margin-left: 3px;
    margin-right: 59px;
    float: right;
-   cursor: url(./mano.svg), auto !important;
+   cursor: url(./mano.svg), auto !important; 
+  
+    
  }
 
+ .error{
+       color: red;
+ }
+
+ 
  .calcular-btn.clicked {
    background-color: black;
    color: white;
@@ -58,19 +63,6 @@ body {
  }
 
 
-
-   
-
- .calcular-btn:hover {
-   cursor: pointer;
- }
- 
- 
-
-
- 
- 
- 
  .container_inferior {
    color: black;
    margin-bottom: 20px;
