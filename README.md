@@ -1,51 +1,50 @@
 
-# Frontend Mentor - Calculadora de Edad
 
-Esta es una solución para el reto de calculadora de edad de [Frontend Mentor](https://www.frontendmentor.io/challenges/calculator-app-9lteq5N29/hub/calculator-app-using-html-css-and-javascript-4lqsbAlXE). Se usaron tecnologías como HTML, CSS y JavaScript para crear una calculadora que permite calcular la edad de una persona a partir de su fecha de nacimiento.
+# Frontend Mentor - Age Calculator
 
-## 🧐 ¿Qué hay dentro?
+This is a solution for [Frontend Mentor] age calculator challenge(https://www.frontendmentor.io/challenges/calculator-app-9lteq5N29/hub/calculator-app-using-html-css-and-javascript -4lqsbAlXE). Technologies such as HTML, CSS, and JavaScript were used to create a calculator that allows you to calculate a person's age from their date of birth.
 
-Este proyecto incluye:
+## 🧐 What's inside?
 
-- Una página HTML con la estructura básica de la calculadora.
-- Un archivo CSS con estilos personalizados para la calculadora.
-- Un archivo JavaScript que maneja el cálculo de la edad y actualiza la interfaz de usuario.
+This project includes:
 
-## 🚀 Empezando
+- An HTML page with the basic structure of the calculator.
+- A CSS file with custom styles for the calculator.
+- A JavaScript file that handles the age calculation and updates the user interface.
 
-Para ver la calculadora en acción, simplemente descarga o clona este repositorio y abre el archivo `index.html` en tu navegador web.
+## 🚀 Getting started
+
+To see the calculator in action, simply download or clone this repository and open the `index.html` file in your web browser.
 
 ```bash
-git clone https://github.com/tu-usuario/tu-repositorio.git
+git clone https://github.com/your-user/your-repository.git
 ```
 
-## 🎨 Diseño
+## 🎨 Design
 
-La calculadora de edad fue diseñada de acuerdo a las especificaciones del reto de Frontend Mentor. Se utilizó un diseño minimalista y sencillo, con un formulario para ingresar la fecha de nacimiento y un botón para calcular la edad. El diseño es responsive y se adapta a diferentes tamaños de pantalla.
+The age calculator was designed according to the specifications of the Frontend Mentor challenge. A minimalist and simple design was used, with a form to enter the date of birth and a button to calculate the age. The design is responsive and adapts to different screen sizes.
 
-![Captura de pantalla 2023-05-10 170033](https://github.com/carolinebaez/calculadora-de-edad/assets/111159807/0b1eb302-6862-46b2-b6b9-c26c0ebfd0d8)
-![Captura de pantalla 2023-05-10 170111](https://github.com/carolinebaez/calculadora-de-edad/assets/111159807/2867f8a2-66ce-4002-b1a0-997dcc40c0df)
+![Captura de pantalla 2023-05-10 170033](https://github.com/carolinebaez/calculadora-de-edad/assets/111159807/b3775231-b790-472c-b140-57343124a702)
 
-
-
+![Captura de pantalla 2023-05-10 170111](https://github.com/carolinebaez/calculadora-de-edad/assets/111159807/041fbd5e-2661-4e5c-ad05-3fe08272b6d6)
 
 
-## 💻 Tecnologías utilizadas
 
-- HTML5
-- CSS3
-- JavaScript
 
-## 🤝 Colaboración
+## 💻 Technologies used
 
-Si deseas colaborar con este proyecto, simplemente haz un fork de este repositorio y realiza tus cambios. Luego, haz un pull request para que podamos revisarlos.
+-HTML5
+-CSS3
+-JavaScript
 
-## 📝 Licencia
+## 🤝 Collaboration
 
-Este proyecto está bajo la Licencia MIT. 
+If you want to contribute to this project, simply fork this repository and make your changes. Then, make a pull request so we can review them.
 
-## 👤 Sobre el autor
+## 📝 License
 
-Este proyecto fue creado por [Caroline Baez ](https://github.com/carolinebaez) como solución al reto de Frontend Mentor. Si deseas ver más de mis proyectos, puedes visitar mi perfil de GitHub.
+This project is licensed under the MIT License.
 
-¡Gracias por revisar mi solución a la calculadora de edad de Frontend Mentor! Si tienes alguna pregunta o sugerencia, no dudes en ponerte en contacto conmigo.
+## 👤 About the author
+
+This project was created by [Caroline Baez ](https://github.com/carolinebaez) as a solution to the Frontend Mentor challenge. If you want to see more of my projects, you can visit my GitHub profile.
