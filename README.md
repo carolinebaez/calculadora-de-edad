@@ -42,7 +42,7 @@ Si deseas colaborar con este proyecto, simplemente haz un fork de este repositor
 
 ## 📝 Licencia
 
-Este proyecto está bajo la Licencia MIT. Puedes hacer lo que quieras con él.
+Este proyecto está bajo la Licencia MIT. 
 
 ## 👤 Sobre el autor
 
