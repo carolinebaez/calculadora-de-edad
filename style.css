@@ -1,83 +1,147 @@
-
 body {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   height: 100vh;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
 }
 
- .container_padre {
-   background-color: white;
-   border-radius: 24px 24px 200px 24px;
-   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
- }
- 
- .container {
-   font-family: 'monospace';
-   color: gray;
-   font-size: 14px;
-   display: flex;
-   padding-left: 48px;
-   gap: 20px;
- }
- 
- .DD, .MM, .YYYY {
-   font-size: 25px;
-   display: flex;
-   border: solid 1px;
-   border-radius: 5px;
-   font-family: 'monospace';
-   padding-left: 25px;
- }
- 
- .YYYY {
-   margin-right: 272px;
- }
- 
- .calcular-btn {
-   background-color: blueviolet;
-   border-radius: 60px;
-   text-align: center;
-   font-size: 50px;
-   color: white;
-   height: 76px;
-   width: 77px;
-   margin-left: 3px;
-   margin-right: 59px;
-   float: right;
-   cursor: url(./mano.svg), auto !important; 
-  
-    
- }
+.container_padre {
+  background-color: white;
+  border-radius: 24px 24px 200px 24px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
 
- .error{
-       color: red;
- }
+.linea {
+  border: 1px solid #dcdcdc;
+  position: absolute;
+  width: 548px;
+  margin-top: 84px;
+  left: 400px;
+}
+.container {
+  font-family: "Roboto", sans-serif;
+  color: gray;
+  font-size: 14px;
+  display: flex;
+  padding-left: 48px;
+  gap: 20px;
+  margin-top: 35px;
+}
 
- 
- .calcular-btn.clicked {
-   background-color: black;
-   color: white;
+.DD,
+.MM,
+.YYYY {
+  font-size: 25px;
+  display: flex;
+  border: solid 1px;
+  border-radius: 5px;
+  padding-left: 25px;
+  font-family: "Roboto", sans-serif;
+}
 
- }
+.YYYY {
+  margin-right: 272px;
+}
 
+.calcular-btn {
+  background-color: blueviolet;
+  border-radius: 60px;
+  text-align: center;
+  font-size: 50px;
+  color: white;
+  height: 76px;
+  width: 77px;
+  margin-left: 3px;
+  margin-right: 59px;
+  float: right;
+  cursor: url(./mano.svg), auto;
+  margin-top: 45px;
+}
 
- .container_inferior {
-   color: black;
-   margin-bottom: 20px;
-   font-weight: 800;
-   font-size: 104px;
-   margin-top: 128px;
-   margin-left: 46px;
- }
- 
- .years, .months, .days {
-   color: blueviolet;
- }
- 
+.calcular-btn:hover {
+  background-color: rgb(126, 13, 174);
+  transition: all 1s ease;
+}
 
 
+.container_inferior {
+  color: black;
+  margin-bottom: 20px;
+  font-weight: 800;
+  font-size: 104px;
+  margin-top: 128px;
+  margin-left: 46px;
+}
 
 
+.years,
+.months,
+.days {
+  color: blueviolet;
+}
 
+@media (max-width: 426px) {
+  body {
+    justify-content: center;
+  }
+
+  .container {
+    padding-left: 14px;
+    gap: 16px;
+    margin-top: 44px;
+    font-size: 13px;
+  }
+  .container_padre {
+    width: 383px;
+    margin-top: 1px;
+    height: 646px;
+    border-radius: 24px 24px 200px 24px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    margin-left: 20px;
+  }
+
+  .YYYY {
+    margin-right: 32px;
+  }
+
+  .calcular-btn {
+    font-size: 39px;
+    height: 78px;
+    width: 77px;
+    margin-right: 158px;
+    margin-top: 88px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .linea {
+    border: 1px solid #dcdcdc;
+    position: absolute;
+    width: 307px;
+    margin-top: 124px;
+    left: 64px;
+  }
+
+  .container_inferior {
+    font-size: 61px;
+    margin-top: 64px;
+    margin-left: 24px;
+    margin-top: 197px;
+  }
+  .error {
+    color: red;
+    font-size: 10px;
+  }
+
+  .DD,
+  .YYYY,
+  .MM {
+    font-size: 20px;
+    padding-top: 10px;
+  }
+  .calcular-btn:hover {
+    background-color: rgb(126, 13, 174);
+    transition: all 1s ease;
+}
+}
