@@ -2,7 +2,7 @@
 
 # Frontend Mentor - Age Calculator
 
-This is a solution for [Frontend Mentor] age calculator challenge(https://www.frontendmentor.io/challenges/calculator-app-9lteq5N29/hub/calculator-app-using-html-css-and-javascript -4lqsbAlXE). Technologies such as HTML, CSS, and JavaScript were used to create a calculator that allows you to calculate a person's age from their date of birth.
+This is a solution for [Frontend Mentor] age calculator challenge(https://www.frontendmentor.io/challenges/age-calculator-app-dF9DFFpj-Q). Technologies such as HTML, CSS, and JavaScript were used to create a calculator that allows you to calculate a person's age from their date of birth.
 
 ## 🧐 What's inside?
 
